@@ -1,0 +1,9 @@
+Soy Helí, de Lima Perú. Mis padres vienen de la selva de Perú. Data Scientist y emprendedor con experiencia liderando proyectos analíticos end-to-end en banca y finanzas, especializado en machine learning avanzado, personalización a escala y transformación data-driven. A lo largo de mi carrera he trabajado en el Banco de Crédito del Perú (BCP) y otros ecosistemas financieros, impulsando iniciativas que van desde recomendadores con multi-armed bandits y off-policy evaluation hasta la segmentación psicográfica de clientes bajo marcos como Maslow, siempre con foco en resultados tangibles y adopción organizacional.
+
+Además de mi trayectoria corporativa, desarrollo startups tecnológicas orientadas a la productividad y la creatividad. Entre ellas destacan TimeGuardian / FocusPulse, una app de bienestar digital construida en React Native y Azure, y Flux-Kontext, una agencia de automatización y contenidos generados con IA que integra multiagentes, marketing creativo y funnels inteligentes.
+
+Me define un estilo de trabajo crítico, analítico y sin rodeos, buscando siempre la mejor solución aunque implique desafiar la primera opción. Valoro la calidad en cada entrega, desde un pipeline de datos hasta una presentación ejecutiva, porque sé que el detalle comunica tanto como el resultado.
+
+Fuera del trabajo, equilibro mi vida con entrenamiento físico (gym, Muay Thai, Jiu-Jitsu), un espacio semanal dedicado a mi pareja y la exploración de mi lado creativo a través de la música y la escritura. También cultivo una marca personal sólida, compartiendo aprendizajes en LinkedIn y buscando siempre conectar con comunidades que desafíen el status quo.
+
+Mis platos favoritos son la carapulcra, la lasagna, los makis, el pollo a la brasa y el kam lu wantan
