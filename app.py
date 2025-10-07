@@ -13,9 +13,12 @@ load_dotenv(override=True)
 def push(message): ###Mensaje de Telegram --- No importante
     bot_token = os.getenv("BOT_TOKEN")
     chat_ID = os.getenv("CHAT_ID")
-    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + chat_ID + '&text=' + message
-    response = requests.get(send_text)
+    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage'
+    payload = {'chat_id': chat_ID, 'text': message}
+    response = requests.get(send_text, params = payload)
     return response
+
+    
 
 def record_user_details(email, name="Nombre no indicado", notes="no proporcionadas"):
     push(f"Registrando {name} con email {email} y notas {notes}")
