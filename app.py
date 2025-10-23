@@ -4,6 +4,8 @@ from openai import OpenAI
 import json, os, requests
 from pypdf import PdfReader
 import gradio as gr
+from fastapi import FastAPI
+
 
 load_dotenv(override=True)
 
@@ -29,7 +31,6 @@ def push(message: str):
         return {"status": "ok" if data.get("ok") else "error", "detail": data}
     except requests.exceptions.RequestException as e:
         return {"status": "error", "detail": f"Network error: {e}"}
-
 
 # ========================== Tools para el modelo ==========================
 
@@ -178,7 +179,7 @@ class Me:
                 except:
                     pass
                 
-                messages.append({"role": "assistant", "content": "se evnvió la pregunta"})
+                messages.append({"role": "assistant", "content": "Datos registrados! Ya me pongo en contacto contigo. En qué más te puedo ayudar?"})
             else:
                 done = True
                 print('MENSAJE', messages)
@@ -186,6 +187,14 @@ class Me:
                 return response.output_text
 
 # ================================ Gradio App ================================
+# Crea la UI de Gradio
+me = Me()
+demo = gr.ChatInterface(me.chat, type="messages")
+
+# Crea el ASGI y monta Gradio en "/"
+app = FastAPI()
+app = gr.mount_gradio_app(app, demo, path="/")
+
+# Permite correr local si quieres (opcional):
 if __name__ == "__main__":
-    me = Me()
-    gr.ChatInterface(me.chat, type="messages").launch()
+    demo.launch(server_name="0.0.0.0", server_port=int(os.getenv("PORT", 7860)))
